@@ -6,11 +6,10 @@ import CollapsedSideMenu from "@/components/Layout/CollapsedSideMenu";
 import CollapsedSettings from "@/components/Layout/CollapsedSettings";
 import MainContent from "@/components/Layout/MainContent";
 import SideMenu from "@/components/Layout/SideMenu";
-import Snackbar from "@/components/Layout/SnackbarProvider";
+import SnackbarProvider from "@/components/Layout/SnackbarProvider";
 
 // global css
 import "./globals.css";
-import SnackbarProvider from "@/components/Layout/SnackbarProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 

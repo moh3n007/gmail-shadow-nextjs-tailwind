@@ -1,4 +1,6 @@
 import { FC } from "react";
+
+// sub components
 import HeaderSearchInput from "./HeaderSearch/HeaderSearchInput";
 
 const HeaderSearch: FC = () => {

@@ -5,6 +5,8 @@ import {
   SnackbarKey,
   useSnackbar,
 } from "notistack";
+
+// icons
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 
 const SnackbarProvider: FC<{ children: React.ReactNode }> = ({ children }) => {

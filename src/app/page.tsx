@@ -1,7 +1,9 @@
 "use client";
+import { useState } from "react";
+
+// custom components
 import HomePageTabs from "@/components/HomePage/HomePageTabs";
 import HomePrimaryTab from "@/components/HomePage/HomePrimaryTab";
-import { useState } from "react";
 
 export default function Home() {
   const [tabNumber, setTabNumber] = useState(0);

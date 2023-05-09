@@ -3,7 +3,7 @@ import { useSnackbar } from "notistack";
 import { FC } from "react";
 
 const HomePrimaryTab: FC = () => {
-  const { enqueueSnackbar, closeSnackbar } = useSnackbar();
+  const { enqueueSnackbar } = useSnackbar();
   return (
     <div className="flex flex-col items-center">
       <span>This is *Primary* tab</span>

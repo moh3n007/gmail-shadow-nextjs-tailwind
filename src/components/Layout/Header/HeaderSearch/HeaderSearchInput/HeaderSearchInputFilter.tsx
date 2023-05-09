@@ -1,9 +1,11 @@
-import IconButton from "@lib/IconButton";
 import { FC, useMemo, useState } from "react";
+
+// sub components
+import IconButton from "@lib/IconButton";
+import HeaderSearchInputFilterMenu from "./HeaderSearchInputFilter/HeaderSearchInputFilterMenu";
 
 // icons
 import TuneIcon from "@mui/icons-material/Tune";
-import HeaderSearchInputFilterMenu from "./HeaderSearchInputFilter/HeaderSearchInputFilterMenu";
 
 const HeaderSearchInputFilter: FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
