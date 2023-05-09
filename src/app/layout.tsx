@@ -31,7 +31,7 @@ export default function RootLayout({
           <SideMenu />
           <div className="flex flex-1 flex-col overflow-y-auto max-h-screen">
             <Header />
-            <div className="flex w-full flex-1 gap-4 overflow-y-auto">
+            <div className="flex w-full flex-1 overflow-y-auto">
               <CollapsedSideMenu />
               <MainContent>{children}</MainContent>
               <CollapsedSettings />

@@ -39,10 +39,10 @@ const SideMenuLink: FC<SideMenuLinkProps> = (props) => {
       {/* Start */}
       {!!children && (
         <>
-          <div className="absolute hidden w-[10px] left-full top-2/4 -translate-y-2/4 group-hover:inline-block overflow-hidden z-10 ">
+          <div className="absolute hidden w-[10px] left-full top-2/4 -translate-y-2/4 group-hover:inline-block overflow-hidden z-[100000]">
             <div className=" h-[14px]  bg-black -rotate-45 transform origin-top-right bg-white"></div>
           </div>
-          <div className="fixed flex justify-center items-center hidden left-[56px] top-[64px] h-[calc(100vh-80px)] bg-white group-hover:flex shadow-popup min-w-[250px] rounded-[24px]">
+          <div className="fixed flex justify-center items-center hidden left-[56px] top-[64px] h-[calc(100vh-80px)] bg-white group-hover:flex shadow-popup min-w-[250px] rounded-[24px] z-[99999]">
             {children}
           </div>
         </>
