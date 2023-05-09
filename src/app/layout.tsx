@@ -6,6 +6,7 @@ import CollapsedSideMenu from "@/components/Layout/CollapsedSideMenu";
 import CollapsedSettings from "@/components/Layout/CollapsedSettings";
 import MainContent from "@/components/Layout/MainContent";
 import SideMenu from "@/components/Layout/SideMenu";
+import Snackbar from "@/components/Layout/Snackbar";
 
 // global css
 import "./globals.css";
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} flex bg-gray-100 text-gray-950 w-screen min-h-screen`}
       >
+        <Snackbar />
         <div className="flex w-full">
           <SideMenu />
           <div className="flex flex-1 flex-col overflow-y-auto max-h-screen">

@@ -1,5 +1,6 @@
 "use client";
 import HomePageTabs from "@/components/HomePage/HomePageTabs";
+import HomePrimaryTab from "@/components/HomePage/HomePrimaryTab";
 import { useState } from "react";
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
 
 // home page tabs components
 const homePageTabs = {
-  0: <span>This is *Primary* tab</span>,
+  0: <HomePrimaryTab />,
   1: <span>This is *Promotions* tab</span>,
   2: <span>This is *Social* tab</span>,
 } as any;
