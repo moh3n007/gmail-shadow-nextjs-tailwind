@@ -25,4 +25,6 @@ const HeaderSearchInput = forwardRef<HTMLInputElement>((props, ref) => {
   );
 });
 
+HeaderSearchInput.displayName = "HeaderSearchInput";
+
 export default HeaderSearchInput;

@@ -40,4 +40,5 @@ const HeaderSearchInputFilterMenu: FC<HeaderSearchInputFilterMenuProps> = ({
   );
 };
 
+HeaderSearchInputFilterMenu.displayName = "HeaderSearchInputFilterMenu";
 export default HeaderSearchInputFilterMenu;

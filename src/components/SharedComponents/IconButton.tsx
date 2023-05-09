@@ -16,12 +16,14 @@ const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(
         ref={ref}
         className={`${
           props.className ?? undefined
-        } flex p-[8px] rounded-full hover:bg-gray-200 transition`}
+        } flex p-[8px] rounded-full hover:bg-gray-300 transition`}
       >
         {props.children}
       </button>
     );
   }
 );
+
+IconButton.displayName = "IconButton";
 
 export default IconButton;

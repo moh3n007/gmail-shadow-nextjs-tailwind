@@ -1,9 +1,26 @@
-import Image from "next/image";
+"use client";
+import HomePageTabs from "@/components/HomePage/HomePageTabs";
+import { useState } from "react";
 
 export default function Home() {
+  const [tabNumber, setTabNumber] = useState(0);
+
   return (
     <div className="rounded-md shadow-md flex flex-1 bg-white flex-col">
-      dasdasdas
+      <div className="flex flex-col flex-1">
+        <h1 className="font-bold text-center py-4">This is *Home* page</h1>
+        <HomePageTabs onChange={setTabNumber} focusedItem={tabNumber} />
+        <div className="border-t-[3px] border-gray-400 flex flex-1 justify-center items-center">
+          {homePageTabs[tabNumber]}
+        </div>
+      </div>
     </div>
   );
 }
+
+// home page tabs components
+const homePageTabs = {
+  0: <span>This is *Primary* tab</span>,
+  1: <span>This is *Promotions* tab</span>,
+  2: <span>This is *Social* tab</span>,
+} as any;

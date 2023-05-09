@@ -23,4 +23,6 @@ const SearchFilterInput = forwardRef<HTMLInputElement, SearchFilterInputProps>(
   }
 );
 
+SearchFilterInput.displayName = "SearchFilterInput";
+
 export default SearchFilterInput;
