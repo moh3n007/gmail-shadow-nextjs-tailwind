@@ -1,91 +1,34 @@
-# TakeHome-FED-SR
-## Sr. Frontend Developer - Take Home Test 
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-As part of our application procedure, we are interested in evaluating your capabilities through a brief assignment. 
+## Getting Started
 
-The task should be accomplishable within a few hours, allowing ample time for completion. However, we highly appreciate any additional enhancements or features you may wish to incorporate, as they will be duly recognized.
+First, run the development server:
 
-## The Assignment
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-We would like you to implement a web application UI
-similar to the one demonstrated in this 90 second video: 
-[Sr. Front End Developer - Take Home Test](https://youtu.be/lvr0cyrRw3A)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-We are not looking for an exact clone of the UI in the video,
-but please stay as close to it as you can and use it as your
-main guide.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Your implementation should only have the following features.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Specs
+## Learn More
 
-1. A responsive web page with:
-    1.  Header
-        - Logo
-        - Search Input
-            - With Dropdown for filtering options
-                - 2 Text inputs
-                - 1 Button
-        - Settings Icon
-            - Click to Show / Hide Settings Panel 
-        - Apps Icon
-        - Avatar Icon
+To learn more about Next.js, take a look at the following resources:
 
-    2.  Main panel with 3 tabs 
-        - Primary
-            - Leave content area blank
-        - Promotions
-            - Leave blank
-        - Social
-            - Leave blank
-    3.  Narrow sidebar navigation with 2 menu options
-        - Toggle switch to show / hide extended sidebar
-        - Mail Menu Icon
-        - Chat Menu Icon
-    4.  Extended sidebar navigation
-        - With 2 Menu Options
-            - Inbox Menu
-            - Categories Menu
-                - Social SubMenu
-                - Updates SubMenu
-    5.  Settings Panel
-        - Leave blank
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## For extra credit:
-    Animate toggle for extended sidebar
-    Animate toggle for settings panel
-    Implement pop-up menu on hover for narrow sidebar
-    Implement Toast notifications 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+## Deploy on Vercel
 
-Please refer to the video, the specs above and the provided screenshots for UI details and specific features. If you have
-any questions please ask!
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-
-## Requirements
-
-- You should use either TailwindCSS or Material Design.
-- Use placeholders for visual assests like logos or other images.
-- Use Material UI Icons, Fonts and Colors or similar open source libraries.
-
-
-## Versions
-Implement at least one (or more) of the following versions:
-
-- Plain HTML / CSS / Javascript
-- NextJS application with Typescript
-
-## Submissions
-
-To complete your assignment, please fork this repo and commit your work to your fork. When you are ready for us to look at it,
-give us access to your fork so we can review it. 
-The deadline for this round of submissions is:
-
-**May 10, 14:00 GMT**
-
-Thank you!
-
-
-
-
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
