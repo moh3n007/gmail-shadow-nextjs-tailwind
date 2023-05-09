@@ -1,19 +1,7 @@
 import { FC } from "react";
 
 // types
-import { SvgIconTypeMap } from "@mui/material";
-import { OverridableComponent } from "@mui/material/OverridableComponent";
-
-interface HomeTabItemProps
-  extends React.DetailedHTMLProps<
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    HTMLButtonElement
-  > {
-  Icon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
-  FilledIcon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
-  text: string;
-  focused?: boolean;
-}
+import { HomeTabItemProps } from "@/interfaces/homePageProps";
 
 const HomeTabItem: FC<HomeTabItemProps> = (props) => {
   const { Icon, FilledIcon, text, focused, ...rest } = props;

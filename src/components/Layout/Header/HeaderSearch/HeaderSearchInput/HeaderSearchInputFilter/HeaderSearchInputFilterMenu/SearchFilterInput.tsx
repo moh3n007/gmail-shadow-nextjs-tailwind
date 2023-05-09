@@ -1,8 +1,7 @@
 import { forwardRef } from "react";
 
-interface SearchFilterInputProps {
-  label: string;
-}
+// types
+import { SearchFilterInputProps } from "@/interfaces/sideMenuProps";
 
 const SearchFilterInput = forwardRef<HTMLInputElement, SearchFilterInputProps>(
   (props, ref) => {

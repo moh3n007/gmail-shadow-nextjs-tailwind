@@ -1,17 +1,7 @@
 import { FC } from "react";
 
 // types
-import { SvgIconTypeMap } from "@mui/material";
-import { OverridableComponent } from "@mui/material/OverridableComponent";
-
-interface SideMenuLinkProps {
-  count?: number;
-  label: string;
-  focused?: boolean;
-  Icon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
-  FilledIcon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
-  children?: React.ReactNode;
-}
+import { SideMenuLinkProps } from "@/interfaces/sideMenuProps";
 
 const SideMenuLink: FC<SideMenuLinkProps> = (props) => {
   const { count, label, focused, Icon, FilledIcon, children } = props;

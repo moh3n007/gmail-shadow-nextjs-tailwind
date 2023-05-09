@@ -1,19 +1,10 @@
 import { FC, useState } from "react";
 
 // types
-import { SvgIconTypeMap } from "@mui/material";
-import { OverridableComponent } from "@mui/material/OverridableComponent";
+import { SideMenuItemProps } from "@/interfaces/sideMenuProps";
 
 // icons
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-
-interface SideMenuItemProps {
-  Icon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
-  name: string;
-  count?: number;
-  children?: React.ReactNode;
-  focused?: boolean;
-}
 
 const SideMenuItem: FC<SideMenuItemProps> = (props) => {
   const { Icon, name, children, count, focused } = props;

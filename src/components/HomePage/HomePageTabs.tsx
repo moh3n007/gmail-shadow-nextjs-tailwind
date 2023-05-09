@@ -1,5 +1,7 @@
 "use client";
 import { FC } from "react";
+
+// sub components
 import HomeTabItem from "./HomePageTabs/HomeTabItem";
 
 // icons
@@ -10,10 +12,8 @@ import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import PeopleAltOutlinedIcon from "@mui/icons-material/PeopleAltOutlined";
 import PeopleAltRoundedIcon from "@mui/icons-material/PeopleAltRounded";
 
-interface HomePageTabsProps {
-  onChange: (index: number) => void;
-  focusedItem: number;
-}
+// types
+import { HomePageTabsProps } from "@/interfaces/homePageProps";
 
 const HomePageTabs: FC<HomePageTabsProps> = (props) => {
   const { onChange, focusedItem } = props;

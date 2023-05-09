@@ -1,12 +1,7 @@
 import { forwardRef } from "react";
 
-interface IconButtonProps
-  extends React.DetailedHTMLProps<
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    HTMLButtonElement
-  > {
-  // any custom props
-}
+// types
+import { IconButtonProps } from "@/interfaces/sharedComponents/buttonProps";
 
 const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(
   (props, ref) => {

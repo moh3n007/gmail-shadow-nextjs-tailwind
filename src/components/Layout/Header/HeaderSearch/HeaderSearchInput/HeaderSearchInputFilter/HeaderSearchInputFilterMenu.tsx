@@ -1,10 +1,11 @@
 import { FC, useEffect } from "react";
+
+// sub components
 import SearchFilterInput from "./HeaderSearchInputFilterMenu/SearchFilterInput";
 import Button from "@lib/Button";
 
-interface HeaderSearchInputFilterMenuProps {
-  toggleMenu: (open: boolean) => void;
-}
+// types
+import { HeaderSearchInputFilterMenuProps } from "@/interfaces/headerProps";
 
 const HeaderSearchInputFilterMenu: FC<HeaderSearchInputFilterMenuProps> = ({
   toggleMenu,
