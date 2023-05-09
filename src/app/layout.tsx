@@ -1,8 +1,14 @@
-import SideMenu from "@/components/Layout/SideMenu";
-import "./globals.css";
 import { Inter } from "next/font/google";
+
+// custom components
 import Header from "@/components/Layout/Header";
 import CollapsedSideMenu from "@/components/Layout/CollapsedSideMenu";
+import CollapsedSettings from "@/components/Layout/CollapsedSettings";
+import MainContent from "@/components/Layout/MainContent";
+import SideMenu from "@/components/Layout/SideMenu";
+
+// global css
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,11 +29,12 @@ export default function RootLayout({
       >
         <div className="flex w-full">
           <SideMenu />
-          <div className="flex flex-1 flex-col">
+          <div className="flex flex-1 flex-col overflow-y-auto max-h-screen">
             <Header />
-            <div className="flex w-full flex-1">
+            <div className="flex w-full flex-1 gap-4 overflow-y-auto">
               <CollapsedSideMenu />
-              <div className="flex flex-1">{children}</div>
+              <MainContent>{children}</MainContent>
+              <CollapsedSettings />
             </div>
           </div>
         </div>

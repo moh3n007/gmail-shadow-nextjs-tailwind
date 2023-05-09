@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       transitionProperty: {
         width: "width",
-        widthAndOpacity: "width, opacity",
+        widthAndOpacity: "width, opacity, margin, right",
       },
     },
     colors: {

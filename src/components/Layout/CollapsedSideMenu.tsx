@@ -14,11 +14,11 @@ const CollapsedSideMenu: FC = () => {
   );
 
   return (
-    <div
-      className={`flex flex-col transition transition-widthAndOpacity w-0 opacity-0 bg-gray-500 ${collapsedClasses}`}
+    <aside
+      className={`flex flex-col transition transition-widthAndOpacity w-0 opacity-0 ${collapsedClasses}`}
     >
       dadadadas
-    </div>
+    </aside>
   );
 };
 
