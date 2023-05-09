@@ -1,13 +1,15 @@
 "use client";
 import { forwardRef } from "react";
 
+// sub components
+import HeaderSearchInputFilter from "./HeaderSearchInput/HeaderSearchInputFilter";
+
 // icons
 import SearchIcon from "@mui/icons-material/Search";
-import HeaderSearchInputFilter from "./HeaderSearchInput/HeaderSearchInputFilter";
 
 const HeaderSearchInput = forwardRef<HTMLInputElement>((props, ref) => {
   return (
-    <div className="relative flex flex-1 items-center bg-white rounded-md py-2 px-4 shadow-lg">
+    <div className="relative flex flex-1 items-center bg-white rounded-md py-2 px-4 shadow-md">
       <label htmlFor="header_search_input" className="flex mr-2">
         <SearchIcon fontSize="small" />
       </label>
