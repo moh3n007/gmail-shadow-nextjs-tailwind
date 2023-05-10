@@ -29,7 +29,7 @@ const HeaderAppsMenu: FC = () => {
       leaveFrom="transform opacity-100 scale-100"
       leaveTo="transform opacity-0 scale-95"
     >
-      <Menu.Items className="absolute w-[250px] max-h-[300px] flex flex-col top-[calc(100%+4px)] right-0 bg-white shadow-lg rounded-md px-4 py-[16px]">
+      <Menu.Items className="absolute w-[250px] max-h-[300px] flex flex-col top-[calc(100%+4px)] right-0 bg-white shadow-lg rounded-md px-4 py-[16px] z-[10000]">
         <div className="overflow-y-auto grid grid-cols-3 gap-3 scrollbar scrollbar-thumb-rounded-md scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
           {iconsObject.map((icon) => (
             <Menu.Item key={`header_app_item_${icon.id}`}>
