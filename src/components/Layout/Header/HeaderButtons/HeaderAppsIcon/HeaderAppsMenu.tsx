@@ -38,7 +38,7 @@ const HeaderAppsMenu: FC<HeaderAppsMenuProps> = ({ toggleMenu }) => {
 
   return (
     <div className="absolute w-[250px] max-h-[300px] flex flex-col top-[calc(100%+4px)] right-0 bg-white shadow-lg rounded-md px-4 py-[16px] z-[9999] gap-4">
-      <div className="overflow-y-auto grid grid-cols-3 gap-3 scrollbar-thumb-blue-500 scrollbar-thumb-rounded hover:scrollbar-thumb-red-500">
+      <div className="overflow-y-auto grid grid-cols-3 gap-3 scrollbar scrollbar-thumb-rounded-md scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
         {iconsObject.map((icon) => (
           <button
             key={`random_icon_${icon.id}`}
