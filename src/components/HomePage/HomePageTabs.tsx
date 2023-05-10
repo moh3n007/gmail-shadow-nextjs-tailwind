@@ -12,25 +12,25 @@ import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import PeopleAltOutlinedIcon from "@mui/icons-material/PeopleAltOutlined";
 import PeopleAltRoundedIcon from "@mui/icons-material/PeopleAltRounded";
 
-// types
-import { HomePageTabsProps } from "@/interfaces/homePageProps";
+// headless UI components
+import { Tab } from "@headlessui/react";
 
-const HomePageTabs: FC<HomePageTabsProps> = (props) => {
-  const { onChange, focusedItem } = props;
+const HomePageTabs: FC = () => {
   return (
-    <ul className="flex">
+    <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20">
       {homeTabs.map((tab, i) => (
-        <li key={`home_tab_${i}`}>
-          <HomeTabItem
-            Icon={tab.icon}
-            FilledIcon={tab.filledIcon}
-            text={tab.text}
-            focused={focusedItem === i}
-            onClick={() => onChange(i)}
-          />
-        </li>
+        <Tab key={`home_tab_${i}`}>
+          {({ selected }) => (
+            <HomeTabItem
+              Icon={tab.icon}
+              FilledIcon={tab.filledIcon}
+              text={tab.text}
+              focused={selected}
+            />
+          )}
+        </Tab>
       ))}
-    </ul>
+    </Tab.List>
   );
 };
 
