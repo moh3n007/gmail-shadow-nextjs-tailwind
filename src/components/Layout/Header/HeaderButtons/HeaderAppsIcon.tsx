@@ -1,18 +1,23 @@
-import IconButton from "@lib/IconButton";
-import { FC, useState } from "react";
+import { FC } from "react";
+// icons
 import AppsIcon from "@mui/icons-material/Apps";
+
+// sub components
 import HeaderAppsMenu from "./HeaderAppsIcon/HeaderAppsMenu";
 
-const HeaderAppsIcon: FC = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+// headless UI components
+import { Menu } from "@headlessui/react";
 
+const HeaderAppsIcon: FC = () => {
   return (
-    <div className="relative" id="header_apps_icon">
-      <IconButton onClick={() => setOpenMenu(true)}>
-        <AppsIcon className="text-gray-600" />
-      </IconButton>
-      {openMenu && <HeaderAppsMenu toggleMenu={setOpenMenu} />}
-    </div>
+    <Menu as="div" className="relative inline-block text-left">
+      <div>
+        <Menu.Button className="flex p-[8px] rounded-full hover:bg-gray-300 transition">
+          <AppsIcon className="text-gray-600" />
+        </Menu.Button>
+      </div>
+      <HeaderAppsMenu />
+    </Menu>
   );
 };
 

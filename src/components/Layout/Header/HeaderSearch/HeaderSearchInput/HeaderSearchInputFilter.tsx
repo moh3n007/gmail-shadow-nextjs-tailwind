@@ -1,32 +1,32 @@
-import { FC, useMemo, useState } from "react";
+import { FC } from "react";
 
 // sub components
-import IconButton from "@lib/IconButton";
 import HeaderSearchInputFilterMenu from "./HeaderSearchInputFilter/HeaderSearchInputFilterMenu";
 
 // icons
 import TuneIcon from "@mui/icons-material/Tune";
 
+// headless UI components
+import { Menu } from "@headlessui/react";
+
 const HeaderSearchInputFilter: FC = () => {
-  const [openMenu, setOpenMenu] = useState(false);
-
-  const buttonClass = useMemo(
-    () => (openMenu ? "opacty-0 invisible" : "opacty-100 visible"),
-    [openMenu]
-  );
-
   return (
-    <div id="clickbox">
-      <div className="ml-4">
-        <IconButton
-          className={`-m-[4px] ${buttonClass}`}
-          onClick={() => setOpenMenu(true)}
-        >
-          <TuneIcon />
-        </IconButton>
-      </div>
-      {openMenu && <HeaderSearchInputFilterMenu toggleMenu={setOpenMenu} />}
-    </div>
+    <Menu as="div" className="inline-block text-left">
+      {({ open }) => (
+        <>
+          <div>
+            <Menu.Button
+              className={`flex p-[8px] rounded-full hover:bg-gray-300 transition -m-[4px] ${
+                open ? "opacty-0 invisible" : "opacty-100 visible"
+              }`}
+            >
+              <TuneIcon className="text-gray-600" />
+            </Menu.Button>
+          </div>
+          <HeaderSearchInputFilterMenu />
+        </>
+      )}
+    </Menu>
   );
 };
 
