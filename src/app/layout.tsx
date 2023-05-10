@@ -9,7 +9,9 @@ import SideMenu from "@/components/Layout/SideMenu";
 
 // global css
 import "./globals.css";
-import Snackbar from "@/components/Layout/Snackbar";
+
+// providers
+import SnackbarProvider from "@/components/providers/SnackbarProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,18 +30,19 @@ export default function RootLayout({
       <body
         className={`${inter.className} flex bg-gray-100 text-gray-950 w-screen min-h-screen`}
       >
-        <Snackbar />
-        <div className="flex w-full">
-          <SideMenu />
-          <div className="flex flex-1 flex-col overflow-y-auto max-h-screen">
-            <Header />
-            <div className="flex w-full flex-1 overflow-y-auto">
-              <CollapsedSideMenu />
-              <MainContent>{children}</MainContent>
-              <CollapsedSettings />
+        <SnackbarProvider>
+          <div className="flex w-full">
+            <SideMenu />
+            <div className="flex flex-1 flex-col overflow-y-auto max-h-screen">
+              <Header />
+              <div className="flex w-full flex-1 overflow-y-auto">
+                <CollapsedSideMenu />
+                <MainContent>{children}</MainContent>
+                <CollapsedSettings />
+              </div>
             </div>
           </div>
-        </div>
+        </SnackbarProvider>
       </body>
     </html>
   );
